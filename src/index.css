@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #f5f5f7;
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: #050505;
+    color: #f5f5f7;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Outlined kinetic background titles for Chapter 08 Journey */
+.stroke-title {
+  -webkit-text-stroke: 1.5px rgba(201, 204, 209, 0.28);
+  color: transparent;
+}
+
+/* Subtle film grain overlay for trailer mode */
+.film-grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8102e;
+}

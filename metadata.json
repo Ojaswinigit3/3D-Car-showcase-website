@@ -1,0 +1,6 @@
+{
+  "name": "Bugatti La Voiture Noire — 3D Interactive Film",
+  "description": "Single-page interactive 3D automotive film and engineering showcase for the 2019 Bugatti La Voiture Noire one-off hypercar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
